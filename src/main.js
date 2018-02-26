@@ -6,6 +6,8 @@ import VueRouter from 'vue-router'
 import PageOne from "./components/PageOne.vue"
 import PageTwo from "./components/PageTwo.vue"
 
+import apolloProvider from "./graphql-provider"
+
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -29,6 +31,7 @@ import './styles.scss';
 
 new Vue({
   router,
+  provide: apolloProvider.provide(),
   components: {},
   created() {
     router.replace('/page-1')

@@ -13,8 +13,16 @@
     "watch:ios": "cross-env PLATFORM=ios npm run watch"
   },
   "dependencies": {
+    "apollo-cache-inmemory": "^1.1.9",
+    "apollo-client": "^2.2.5",
+    "apollo-link": "^1.2.1",
+    "apollo-link-http": "^1.5.1",
+    "graphql": "^0.13.1",
+    "graphql-tag": "^2.8.0",
     "nativescript-vue": "^1.2.0",
-    "tns-core-modules": "3.4.1"
+    "tns-core-modules": "3.4.1",
+    "vue-apollo": "^3.0.0-beta.4",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
