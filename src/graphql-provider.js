@@ -1,12 +1,18 @@
-import Vue from 'vue'
-import { ApolloClient } from 'apollo-client'
-import { HttpLink } from 'apollo-link-http'
-import { InMemoryCache } from 'apollo-cache-inmemory'
+const Vue = require('nativescript-vue');
+import {
+    ApolloClient
+} from 'apollo-client'
+import {
+    HttpLink
+} from 'apollo-link-http'
+import {
+    InMemoryCache
+} from 'apollo-cache-inmemory'
 import VueApollo from 'vue-apollo'
 
 const httpLink = new HttpLink({
     // You should use an absolute URL here
-    uri: 'http://localhost:3020/graphql',
+    uri: "https://v7mnw3m03.lp.gql.zone/graphql"
 })
 
 // Create the apollo client
