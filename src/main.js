@@ -31,11 +31,8 @@ const router = new VueRouter({
 })
 import './styles.scss';
 
-
+router.replace('/page-1')
 new Vue({
   router,
   apolloProvider,
-  created() {
-    router.replace('/page-1')
-  },
 }).$start();
